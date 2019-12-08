@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-black">
+    <section id="survey" class="container mx-auto">
+        <div>
+
+        </div>
+        <form class="w-full max-w-xl mx-auto">
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="name">
+                    Name
+                </label>
+                <input
+                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="name" type="text" placeholder="name">
+            </div>
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="photo">
+                    Photo (Enter a url to a photo of yourself)
+                </label>
+                <input
+                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="photo" type="text" placeholder="photo/url">
+            </div>
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                    It's best to go all out or not at all.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question1">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
+                    You don't care what is in your jello, as long as it taste good.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question2">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
+                    You don't care what is in your jello, as long as it taste good.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question3">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
+                    You don't care what is in your jello, as long as it taste good.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question4">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
+                    You don't care what is in your jello, as long as it taste good.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question5">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
+                    You don't care what is in your jello, as long as it taste good.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question6">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
+                    You don't care what is in your jello, as long as it taste good.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question7">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
+                    You don't care what is in your jello, as long as it taste good.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question8">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
+                    You don't care what is in your jello, as long as it taste good.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question9">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
+                    You don't care what is in your jello, as long as it taste good.
+                </label>
+                <div class="relative">
+                    <select
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="question10">
+                        <option selected disabled>Choose One</option>
+                        <option value="1">1 <span class="text-gray-200">(not really)</span></option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 <span class="text-gray-300">(definitely)</span></option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <button class="" id="submit" type="submit">Submit</button>
+        </form>
+    </section>
+    <script>
+        $('#submit').on('click', (e) => {
+            e.preventDefault();
+            let totalInput = {
+                name: $('#name').val(),
+                photo: $('#photo').val(),
+                scores: [
+                    $('#question1').val(),
+                    $('#question2').val(),
+                    $('#question3').val(),
+                    $('#question4').val(),
+                    $('#question5').val(),
+                    $('#question6').val(),
+                    $('#question7').val(),
+                    $('#question8').val(),
+                    $('#question9').val(),
+                    $('#question10').val()
+                ]
+            }
+            const myURL = window.location.origin;
+
+            $.post(myURL + '/api/friends', totalInput, data => {
+                console.log(data);
+            })
+        })
+
+    </script>
+</body>
+
+</html>

@@ -19,35 +19,80 @@ const friends = [
         name:'Aunt Bethany', 
         photo:'',
         scores:[
-
+            4,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
         ]
     },
     {
         name:'Cousin Eddie',
         photo:'',
         scores:[
-
+            3,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
         ]
     },
     {
         name:'Rusty',
         photo:'',
         scores:[
-
+            2,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
         ]
     },
     {
         name:'Lewis',
         photo:'',
         scores:[
-
+            1,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
         ]
     },
     {
         name:'Snot',
         photo:'',
         scores:[
-
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
         ]
     }
 
