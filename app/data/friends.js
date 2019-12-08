@@ -1,98 +1,98 @@
 const friends = [
     {
-        name:'Clark',
-        photo:"",
+        name:'Clark Griswold',
+        photo:"https://media1.fdncms.com/ntslo/imager/u/original/3930708/musicartsculture_movies2-1-6a925808b2a91376.jpg",
         scores:[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+            '5',
+            '1',
+            '4',
+            '4',
+            '5',
+            '1',
+            '2',
+            '5',
+            '4',
+            '1'
         ]
     },
     {
         name:'Aunt Bethany', 
-        photo:'',
+        photo:'https://i.pinimg.com/originals/d2/2f/18/d22f18943eb05e58594d2442317c5bb6.jpg',
         scores:[
-            4,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+            '5',
+            '1',
+            '4',
+            '4',
+            '5',
+            '1',
+            '2',
+            '5',
+            '4',
+            '1'
         ]
     },
     {
         name:'Cousin Eddie',
-        photo:'',
+        photo:'https://i.pinimg.com/originals/ab/ab/73/abab739df44218f58ee4afd944ef0425.jpg',
         scores:[
-            3,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+            '5',
+            '1',
+            '4',
+            '4',
+            '5',
+            '1',
+            '2',
+            '5',
+            '4',
+            '1'
         ]
     },
     {
-        name:'Rusty',
-        photo:'',
+        name:'Rusty Griswold',
+        photo:'https://i.ytimg.com/vi/XFtgvOgA96c/maxresdefault.jpg',
         scores:[
-            2,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+            '5',
+            '1',
+            '4',
+            '4',
+            '5',
+            '1',
+            '2',
+            '5',
+            '4',
+            '1'
         ]
     },
     {
-        name:'Lewis',
-        photo:'',
+        name:'Uncle Lewis',
+        photo:'https://ourfrontporchco.org/wp-content/uploads/2015/12/christmasvacationunclelewis-edit.jpg',
         scores:[
-            1,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+            '5',
+            '1',
+            '4',
+            '4',
+            '5',
+            '1',
+            '2',
+            '5',
+            '4',
+            '1'
         ]
     },
     {
         name:'Snot',
-        photo:'',
+        photo:'https://i.imgur.com/SDB3w36.png?1',
         scores:[
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            '1',
+            '1',
+            '1',
+            '1',
+            '1',
+            '1',
+            '1',
+            '1',
+            '1',
+            '1'
         ]
     }
 

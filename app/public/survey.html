@@ -11,18 +11,18 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-black">
+<body class="bg-black flex justify-center items-center h-full">
     <section id="survey" class="container mx-auto">
         <div>
 
         </div>
-        <form class="w-full max-w-xl mx-auto">
+        <form class="w-full max-w-xl mx-auto py-6" id="survey">
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="name">
                     Name
                 </label>
                 <input
-                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                     id="name" type="text" placeholder="name">
             </div>
             <div class="w-full px-3 mb-6 md:mb-0">
@@ -30,16 +30,16 @@
                     Photo (Enter a url to a photo of yourself)
                 </label>
                 <input
-                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                     id="photo" type="text" placeholder="photo/url">
             </div>
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
-                    It's best to go all out or not at all.
+                   1. It's best to go all out or not at all.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question1">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -57,12 +57,12 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
-                    You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                  2. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question2">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -80,12 +80,12 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
-                    You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                   3. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question3">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -103,12 +103,12 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
-                    You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                  4. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question4">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -126,12 +126,12 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
-                    You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                   5. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question5">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -149,12 +149,12 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
-                    You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                   6. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question6">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -172,12 +172,12 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
-                    You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                   7. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question7">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -195,12 +195,12 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
-                    You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                   8. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question8">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -218,12 +218,12 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
-                    You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-nine">
+                    9. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question9">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -241,12 +241,12 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="question-one">
-                    You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-ten">
+                    10. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
                     <select
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
                         id="question10">
                         <option selected disabled>Choose One</option>
                         <option value="1">1 <span class="text-gray-200">(not really)</span></option>
@@ -262,12 +262,34 @@
                     </div>
                 </div>
             </div>
-            <button class="" id="submit" type="submit">Submit</button>
+            <button class="text-white rounded-full py-3 px-12 ml-3 bg-gray-700" id="submit" type="submit">Submit</button>
         </form>
     </section>
+    <div id="modal" class="fixed top-0 w-screen h-full flex justify-center items-center" style="background-color:rgba(0,0,0,0.6); display:none;">
+            <div class="max-w-sm rounded bg-white overflow-hidden shadow-lg">
+                    <img class="w-full " src="https://ourfrontporchco.org/wp-content/uploads/2015/12/christmasvacationunclelewis-edit.jpg" id="match-photo" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2" id="match-name"></div>
+                      <p class="text-gray-700 text-base">
+                        is your best match!
+                      </p>
+                    </div>
+                  </div>
+    </div>
     <script>
         $('#submit').on('click', (e) => {
             e.preventDefault();
+            const valForm = () =>{
+                let formValid = true;
+                $('.question').each(()=> {
+                    if($(this).val()=== ''){
+                        formValid = false;
+                        console.log('form not filled out')
+                    }
+                    return formValid
+                })
+            }
+            if(valForm()){
             let totalInput = {
                 name: $('#name').val(),
                 photo: $('#photo').val(),
@@ -287,9 +309,19 @@
             const myURL = window.location.origin;
 
             $.post(myURL + '/api/friends', totalInput, data => {
+                $('#match-photo').attr('src', data.photo);
+                $('#match-name').text(data.name);
                 console.log(data);
-            })
+                $('#modal').css('display', 'flex');
+            })}
         })
+        $(window).on('click', (e)=>{
+            if(e.target.id === 'modal'){
+                $('#modal').css('display', 'none');
+                location.reload(true);
+            }
+        })
+    
 
     </script>
 </body>

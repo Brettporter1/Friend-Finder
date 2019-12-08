@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Find a Friend</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body{
+            height:100vh;
+            background: rgb(122,237,233);
+            background: linear-gradient(135deg, rgba(122,237,233,1) 0%, rgba(49,51,226,1) 79%, rgba(66,0,154,1) 100%);
+        }
+    
+    </style>
 </head>
 <body>
-    <h1>I'm here</h1>
+        <div class="md:w-1/2 sm:w-full mx-auto sm:mt-0 md:mt-6 bg-white overflow-hidden shadow-lg">
+                <img class="w-full h-1/4 object-cover" src="https://video-images.vice.com/articles/5c1c0e93d3c9f500071aa185/lede/1545343960175-MV5BZWJiZWY4MzctOTgzNC00OTY1LWE3OGYtOWMyZGE5NTNkYzYwXkEyXkFqcGdeQXVyNzc5NjM0NA_V1_.jpeg?crop=1xw%3A1xh%3Bcenter%2Ccenter&resize=2000%3A*" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-3xl mb-2 text-center">Tis the season to be Merry</div>
+                  <p class="text-gray-700 text-lg text-base">
+                    Find yourself a friend to spend these nippley days with... wait did I say ni....Well there is a nip in the air.
+                  </p>
+                </div>
+                <div class="px-6 py-4 flex justify-center">
+                  <a href="/survey"><button class="inline-block cursor-pointer mx-auto bg-gray-200 rounded-full px-4 py-3 hover:bg-blue-500 hover:text-white text-lg font-semibold text-gray-700 mr-2">Find a Friend</button></a>
+                </div>
+              </div>
 </body>
 </html>
