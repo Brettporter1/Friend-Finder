@@ -4,62 +4,62 @@ const friends = [
         photo:"https://media1.fdncms.com/ntslo/imager/u/original/3930708/musicartsculture_movies2-1-6a925808b2a91376.jpg",
         scores:[
             '5',
-            '1',
-            '4',
-            '4',
-            '5',
-            '1',
             '2',
-            '5',
+            '2',
+            '2',
+            '2',
+            '1',
             '4',
-            '1'
+            '3',
+            '1',
+            '2'
         ]
     },
     {
         name:'Aunt Bethany', 
         photo:'https://i.pinimg.com/originals/d2/2f/18/d22f18943eb05e58594d2442317c5bb6.jpg',
         scores:[
+            '2',
+            '3',
+            '3',
             '5',
-            '1',
-            '4',
-            '4',
-            '5',
-            '1',
+            '2',
+            '2',
+            '3',
             '2',
             '5',
-            '4',
-            '1'
+            '3'
         ]
     },
     {
         name:'Cousin Eddie',
         photo:'https://i.pinimg.com/originals/ab/ab/73/abab739df44218f58ee4afd944ef0425.jpg',
         scores:[
+            '3',
             '5',
+            '5',
+            '4',
+            '3',
             '1',
-            '4',
-            '4',
-            '5',
-            '1',
-            '2',
             '5',
             '4',
-            '1'
+            '4',
+            '5'
         ]
     },
     {
         name:'Rusty Griswold',
         photo:'https://i.ytimg.com/vi/XFtgvOgA96c/maxresdefault.jpg',
         scores:[
-            '5',
-            '1',
-            '4',
-            '4',
-            '5',
-            '1',
+            '3',
+            '3',
             '2',
+            '2',
+            '1',
             '5',
-            '4',
+            '3',
+            '3',
+            '1',
             '1'
         ]
     },
@@ -67,32 +67,32 @@ const friends = [
         name:'Uncle Lewis',
         photo:'https://ourfrontporchco.org/wp-content/uploads/2015/12/christmasvacationunclelewis-edit.jpg',
         scores:[
-            '5',
             '1',
             '4',
+            '5',
             '4',
+            '5',
+            '4',
+            '1',
             '5',
             '1',
-            '2',
-            '5',
-            '4',
-            '1'
+            '2'
         ]
     },
     {
         name:'Snot',
         photo:'https://i.imgur.com/SDB3w36.png?1',
         scores:[
+            '5',
+            '5',
+            '5',
+            '4',
             '1',
             '1',
-            '1',
-            '1',
-            '1',
-            '1',
-            '1',
-            '1',
-            '1',
-            '1'
+            '2',
+            '5',
+            '3',
+            '5'
         ]
     }
 

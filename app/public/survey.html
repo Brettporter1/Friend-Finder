@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Friend finder Survey</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <style>
+        *{
+            box-sizing: border-box;
+        }
             body{
-                height:100vh;
+                height:100%;
                 background: rgb(122,237,233);
                 background: linear-gradient(135deg, rgba(122,237,233,1) 0%, rgba(49,51,226,1) 79%, rgba(66,0,154,1) 100%);
+                background-size: cover;
+                background-repeat: no-repeat;
             }
         
         </style>
@@ -24,7 +29,7 @@
         <div>
 
         </div>
-        <form class="w-full max-w-xl mx-auto py-6" id="survey">
+        <form class="w-full max-w-xl mx-auto py-6 flex flex-wrap justify-center relative h-auto" id="survey">
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="name">
                     Name
@@ -158,7 +163,7 @@
 
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question6">
-                   6. You'd rather do taxes or pay bills that help hang Christmas lights.
+                   6. You'd rather do taxes or pay bills than help hang Christmas lights.
                 </label>
                 <div class="relative">
                     <select
@@ -204,7 +209,7 @@
 
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
-                   8. .
+                   8. You love the thrill of the hunt.
                 </label>
                 <div class="relative">
                     <select
@@ -227,7 +232,7 @@
 
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-nine">
-                    9. You don't care what is in your jello, as long as it taste good.
+                    9. You think the Star Spangled Banner is a Christmas song.
                 </label>
                 <div class="relative">
                     <select
@@ -250,7 +255,7 @@
 
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-ten">
-                    10. You don't care what is in your jello, as long as it taste good.
+                    10. You like the taste of squirrel.
                 </label>
                 <div class="relative">
                     <select
@@ -270,19 +275,26 @@
                     </div>
                 </div>
             </div>
-            <button class="text-white rounded-full py-3 px-12 ml-3 bg-gray-700" id="submit" type="submit">Submit</button>
+            <button class="text-white rounded-full py-3 px-12 mb-6 bg-gray-700" id="submit" type="submit">Submit</button>
+            <footer class="w-56 mt-6 mx-auto text-center text-white absolute bottom-0 my-3 flex justify-between">
+                    <a href="/api/friends" target="_blank" class="hover:text-black">API Friends List</a>
+                    <span> | </span>
+                    <a href="https://github.com/Brettporter1/Friend-Finder" target="_blank" class="hover:text-black">Git Repo</a>
+                </footer>
         </form>
+        
     </section>
+    
     <div id="modal" class="fixed top-0 w-screen h-full flex justify-center items-center" style="background-color:rgba(0,0,0,0.6); display:none;">
-            <div class="max-w-sm rounded bg-white overflow-hidden shadow-lg">
-                    <img class="w-full " src="https://ourfrontporchco.org/wp-content/uploads/2015/12/christmasvacationunclelewis-edit.jpg" id="match-photo" alt="Sunset in the mountains">
-                    <div class="px-6 py-4">
-                      <div class="font-bold text-xl mb-2" id="match-name"></div>
-                      <p class="text-gray-700 text-base">
-                        is your best match!
-                      </p>
-                    </div>
-                  </div>
+        <div class="max-w-sm rounded bg-white overflow-hidden shadow-lg">
+            <img class="w-full " src="https://ourfrontporchco.org/wp-content/uploads/2015/12/christmasvacationunclelewis-edit.jpg" id="match-photo" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2" id="match-name"></div>
+              <p class="text-gray-700 text-base">
+                is your best match!
+              </p>
+            </div>
+        </div>
     </div>
     <script>
         $('#submit').on('click', (e) => {
