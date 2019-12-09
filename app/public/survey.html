@@ -9,9 +9,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+            body{
+                height:100vh;
+                background: rgb(122,237,233);
+                background: linear-gradient(135deg, rgba(122,237,233,1) 0%, rgba(49,51,226,1) 79%, rgba(66,0,154,1) 100%);
+            }
+        
+        </style>
 </head>
 
-<body class="bg-black flex justify-center items-center h-full">
+<body class="flex justify-center items-center h-full">
     <section id="survey" class="container mx-auto">
         <div>
 
@@ -22,7 +30,7 @@
                     Name
                 </label>
                 <input
-                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
+                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input"
                     id="name" type="text" placeholder="name">
             </div>
             <div class="w-full px-3 mb-6 md:mb-0">
@@ -30,11 +38,11 @@
                     Photo (Enter a url to a photo of yourself)
                 </label>
                 <input
-                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 question"
+                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 mb-6 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input"
                     id="photo" type="text" placeholder="photo/url">
             </div>
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question1">
                    1. It's best to go all out or not at all.
                 </label>
                 <div class="relative">
@@ -57,7 +65,7 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question2">
                   2. You don't care what is in your jello, as long as it taste good.
                 </label>
                 <div class="relative">
@@ -80,8 +88,8 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
-                   3. You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question3">
+                   3. Septic Dumping into a municiple drainage doesn't bother you.
                 </label>
                 <div class="relative">
                     <select
@@ -103,8 +111,8 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
-                  4. You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question4">
+                  4. It's hard to remember what you did five minutes ago.
                 </label>
                 <div class="relative">
                     <select
@@ -126,8 +134,8 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
-                   5. You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question5">
+                   5. Nothing better than an comfy chair and a stogie.
                 </label>
                 <div class="relative">
                     <select
@@ -149,8 +157,8 @@
             </div>
 
             <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
-                   6. You don't care what is in your jello, as long as it taste good.
+                <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question6">
+                   6. You'd rather do taxes or pay bills that help hang Christmas lights.
                 </label>
                 <div class="relative">
                     <select
@@ -173,7 +181,7 @@
 
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
-                   7. You don't care what is in your jello, as long as it taste good.
+                   7. You'd do anything for family (Even if that means kidnapping).
                 </label>
                 <div class="relative">
                     <select
@@ -196,7 +204,7 @@
 
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-white text-sm font-bold mb-2" for="question-one">
-                   8. You don't care what is in your jello, as long as it taste good.
+                   8. .
                 </label>
                 <div class="relative">
                     <select
@@ -279,16 +287,25 @@
     <script>
         $('#submit').on('click', (e) => {
             e.preventDefault();
-            const valForm = () =>{
+            // still need to figure out why my form validation isn't working. 
+            function valForm(){
+                console.log('first console')
                 let formValid = true;
-                $('.question').each(()=> {
-                    if($(this).val()=== ''){
+                $('.question').each( function() {
+                    if(this.value === 'Choose One'){
                         formValid = false;
-                        console.log('form not filled out')
                     }
-                    return formValid
                 })
+                $('.form-input').each(function(){
+                    if(this.value == ''){
+                        formValid = false;
+                    }
+                })
+                return formValid;
             }
+            if(!valForm()){
+                alert('Please complete the form')
+            };
             if(valForm()){
             let totalInput = {
                 name: $('#name').val(),
@@ -313,7 +330,8 @@
                 $('#match-name').text(data.name);
                 console.log(data);
                 $('#modal').css('display', 'flex');
-            })}
+            })
+        }
         })
         $(window).on('click', (e)=>{
             if(e.target.id === 'modal'){
